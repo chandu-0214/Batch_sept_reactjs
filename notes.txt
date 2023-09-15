@@ -1,0 +1,14 @@
+npx create-react-app 01Basic
+ls => used to see the files
+cd => used to change the directory or folder
+npm i 
+npm start 
+
+
+
+components(function which return jsx) = >
+                1. class components
+                2. functional components 
+
+
+props => data which u need  pass to the components
