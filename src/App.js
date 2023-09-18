@@ -1,10 +1,10 @@
 import './App.css';
-import SearchName from './components/search';
+import RenderList from './components/renderList';
 
 function App() {
   return (
    <div>
-    <SearchName/>
+    <RenderList/>
    </div>
   );
 }

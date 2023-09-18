@@ -12,3 +12,4 @@ components(function which return jsx) = >
 
 
 props => data which u need  pass to the components
+rfce
