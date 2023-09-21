@@ -12,4 +12,16 @@ components(function which return jsx) = >
 
 
 props => data which u need  pass to the components
-rfce
+
+Note shortcut for coponent =>rfce
+1. useState Hook
+Components often need to change what’s on the screen as a result of an interaction by user.
+You can add state to a component with a useState Hook. Hooks are special functions that let your components use React features (state is one of those features). The useState Hook lets you declare a state variable. It takes the initial state and returns a pair of values: the current state, and a state setter function that lets you update it.
+
+The useState Hook provides those two things:
+A state variable to retain the data between renders.
+A state setter function to update the variable and trigger React to render the component again. Hooks—functions starting with use—can only be called at the top level of your components. 
+There are 3 rules for hooks:
+Hooks can only be called inside React function components.
+Hooks can only be called at the top level of a component.
+Hooks cannot be conditional.

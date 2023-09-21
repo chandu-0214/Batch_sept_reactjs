@@ -1,10 +1,13 @@
 import './App.css';
-import Button from './components/state and events/event';
+import Counter from './components/state and events/counter';
 
 function App() {
   return (
    <div>
-    <Button/>
+    <Counter increment={1} clr={"orange"}/>
+    <Counter increment={2} clr={"blue"}/>
+    <Counter increment={3} clr={"green"}/>
+
    </div>
   );
 }
