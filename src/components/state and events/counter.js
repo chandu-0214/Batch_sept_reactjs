@@ -13,7 +13,7 @@ function Counter(props) {
   }
   return (
     <div>
-        <h2>Counter App-{props.increment}</h2>
+        <h2 className='counterHeading'>Counter App-{props.increment}</h2>
         <h1 style={{color:props.clr}}>Count:{count}</h1>
         <button onClick={handleCountAdd}>Add+{props.increment}</button>
         <button onClick={handleCountMinus}>Minus-{props.increment}</button>
