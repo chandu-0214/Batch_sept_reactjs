@@ -4,11 +4,11 @@ function Counter(props) {
     console.log("first")
   const [count, setcount] = useState(0)
   const handleCountAdd = ()=>{
-    setcount(count+props.increment)  // first it will update the state varibale and it triggeres the component
+    setcount((prev)=>prev+props.increment)  // first it will update the state varibale and it triggeres the component
 
   }
   const handleCountMinus = ()=>{
-    setcount(count-props.increment)  // first it will update the state varibale and it triggeres the component
+    setcount((prev)=>prev-props.increment)  // first it will update the state varibale and it triggeres the component
 
   }
   return (

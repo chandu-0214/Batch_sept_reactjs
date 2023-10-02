@@ -1,10 +1,9 @@
 import './App.css';
-import Project from './components/state and events/project';
-
+import Wikiapplication from './components/state and events/wikiapplication';
 function App() {
   return (
    <div>
-    <Project/>
+    <Wikiapplication/>
    </div>
   );
 }

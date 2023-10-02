@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Listitem from '../basic/listitem'
 
 function Project() {
@@ -24,7 +24,8 @@ function Project() {
         "Emily Lewis",
         "Joseph Moore"
     ]
-    const [personArray, setpersonArray] = useState(person_names)
+
+    const [personArray, setpersonArray] = useState([])
     const handleInputSearch = (event)=>{
         console.log(event.target.value)
         const filteredNamesArray = person_names.filter((eachName)=>{
@@ -34,6 +35,14 @@ function Project() {
         setpersonArray(filteredNamesArray)
         console.log("Input trigerred")
     }
+    // useEffect(() => {
+    //   const data = fetch('url')
+    //   setpersonArray(data)
+    //   return () => {
+        
+    //   }
+    // }, [])
+    
   return (
     <div>
         <h2>Project</h2>
