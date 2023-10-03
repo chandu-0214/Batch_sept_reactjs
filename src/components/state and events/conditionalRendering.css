@@ -4,3 +4,12 @@
 .counterHeading{
     color: aqua;
 }
+.wikiCard{
+    border-radius: 8px;
+    border-color: blueviolet;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+    text-align: start;
+}
