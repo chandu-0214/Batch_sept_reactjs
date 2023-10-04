@@ -32,7 +32,7 @@ function Wikiapplication() {
         <h2>Wikiapplication</h2>
         <div>
             <label htmlFor='inputsearch'>Search Here</label>
-            <input onKeyUp={handleinput} type='search' placeholder='enter to search'/>
+            <input onKeyUp={handleinput} type='text' placeholder='enter to search'/>
         </div>
         <div>  
         <ol>
