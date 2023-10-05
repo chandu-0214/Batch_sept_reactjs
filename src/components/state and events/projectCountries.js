@@ -2,12 +2,16 @@ import React, { useEffect, useState } from 'react'
 import CountryCard from './countryCard'
 
 function ProjectCountries() {
-    const [searchValue, setSearchValue] = useState('')
+    const [FilteredData, setFilteredData] = useState([])
     const [data, setData] = useState([])
 
     const handleInputSearch = (event)=>{
         console.log(event.target.value)
-        setSearchValue(event.target.value)
+        const filteredData = data.filter((eachItem)=>{
+                return (eachItem.name).toLowerCase().includes((event.target.value).toLowerCase())
+        })
+        setFilteredData(filteredData)
+        console.log(filteredData,'filteredData')
     }
 
     useEffect(() => {
@@ -27,9 +31,8 @@ function ProjectCountries() {
             <label>Search Country</label>
             <input type='text' placeholder='country name' onChange={handleInputSearch}/>
         </div>
-        {console.log(data)}
         {
-            data ? data.map((eachCountryItem)=><CountryCard eachCountryItem={eachCountryItem}/>) : " No Item Found"
+            FilteredData.length ? FilteredData.map((eachCountryItem)=><CountryCard eachCountryItem={eachCountryItem}/>) : "No Item Found"
         }
     </div>
   )
