@@ -1,9 +1,10 @@
 import './App.css';
-import ProjectCountries from './components/state and events/projectCountries';
+import Wikiapplication from './components/state and events/wikiapplication';
 function App() {
   return (
    <div>
-    <ProjectCountries/>
+    {/* <ProjectCountries/> */}
+    <Wikiapplication/>
    </div>
   );
 }
