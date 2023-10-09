@@ -3,28 +3,42 @@ import React, { useEffect, useState } from 'react'
 function Intervals() {
 
 const [count, setCount] = useState(0)
+const [isRunning, setIsRunning] = useState(false)
 const handleStart = ()=>{
-  
+  setIsRunning(true)
 }
+const handleStop = ()=>{
+  setIsRunning(false)
+}
+const handleReset = ()=>{
+  setCount(0)
+  setIsRunning(false)
+}
+
  useEffect(() => {
-   const intervalId = setInterval(()=>{
-    // setCount((prev)=>prev+1)
-    setCount(count+1)
-},1000)
+   let intervalId
+  if(isRunning){
+    intervalId = setInterval(()=>{
+      setCount((prev)=>prev+1)
+  },1000)
+  }
+  else{
+    clearInterval(intervalId)
+  }
  
    return () => {
      clearInterval(intervalId)
    }
- },[count])
+ },[isRunning])
  
 
   return (
     <div>
         <h2>Set Intervals </h2>
-        <p>{count}</p>
+        <p>Counter :- {count}</p>
         <button onClick={handleStart}>Start</button>
-        <button>Stop</button>
-        <button>Reset</button>
+        <button onClick={handleStop}>Stop</button>
+        <button onClick={handleReset}>Reset</button>
     </div>
   )
 }

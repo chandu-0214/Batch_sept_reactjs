@@ -1,10 +1,9 @@
 import './App.css';
-import Wikiapplication from './components/state and events/wikiapplication';
+import InputForm from './components/state and events/forms';
 function App() {
   return (
    <div>
-    {/* <ProjectCountries/> */}
-    <Wikiapplication/>
+    <InputForm/>
    </div>
   );
 }
