@@ -1,9 +1,9 @@
 import './App.css';
-import InputForm from './components/state and events/forms';
+import CounterReducer from './components/state-management/CounterReducer';
 function App() {
   return (
    <div>
-    <InputForm/>
+    <CounterReducer/>
    </div>
   );
 }

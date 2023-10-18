@@ -1,0 +1,28 @@
+use-Reducer=>
+    1. state mannagement hook as same like a usestate
+
+    synatx=>
+            const [state, setstate] = useState(IntialCondition)
+
+             const reducer = (state,action)=>{
+
+                return newState
+                
+            }
+            const [state, dispatch] =useReducer(reducer,IntialCondition)
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
