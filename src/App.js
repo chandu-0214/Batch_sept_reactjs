@@ -1,9 +1,9 @@
 import './App.css';
-import CounterReducer from './components/state-management/CounterReducer';
+import CounterTwo from './components/state-management/CounterTwo';
 function App() {
   return (
    <div>
-    <CounterReducer/>
+    <CounterTwo/>
    </div>
   );
 }

@@ -9,6 +9,8 @@ use-Reducer=>
                 return newState
                 
             }
+
+            // reducer is pure function
             const [state, dispatch] =useReducer(reducer,IntialCondition)
            
 
