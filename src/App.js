@@ -1,9 +1,9 @@
 import './App.css';
-import CounterTwo from './components/state-management/CounterTwo';
+import ShoppingCart from './components/state-management/shoppingCart';
 function App() {
   return (
    <div>
-    <CounterTwo/>
+    <ShoppingCart/>
    </div>
   );
 }

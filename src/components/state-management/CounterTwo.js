@@ -11,17 +11,17 @@ const reducer = (state,action)=>{
     console.log(state)
     switch(action.typeOfAct){
         case "Increment":
-            return {firstCount:state.firstCount+action.payload,secoundCount:state.secoundCount}
+            return {...state,firstCount:state.firstCount+action.payload}
         case "Decrement":
-            return {firstCount:state.firstCount-action.payload,secoundCount:state.secoundCount}
+            return {...state,firstCount:state.firstCount-action.payload}
         case "Reset":
-            return {firstCount:0,secoundCount:state.secoundCount}
+            return {...state,firstCount:0}
         case "IncrementForTwo":
-            return {secoundCount:state.secoundCount+action.payload,firstCount:state.firstCount}
+            return {...state,secoundCount:state.secoundCount+action.payload}
         case "DecrementForTwo":
-            return {secoundCount:state.secoundCount-action.payload,firstCount:state.firstCount}
+            return {...state,secoundCount:state.secoundCount-action.payload}
         case "ResetForTwo":
-            return {secoundCount:0,firstCount:state.firstCount}
+            return {...state,secoundCount:0,}
         default:
             return state
     }
